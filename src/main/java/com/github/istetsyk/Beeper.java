@@ -11,6 +11,11 @@ class Beeper {
     private String orderName;
     private LocalDateTime calledAt;
     private LocalDateTime collectedAt;
+    private FoodType foodType;
+
+    public FoodType getFoodType() {
+        return foodType;
+    }
 
     public Beeper(String orderName) {
         this.orderName = orderName;
@@ -20,6 +25,8 @@ class Beeper {
     public String getOrderName(){
         return orderName;
     }
+
+
 
     @Override
     public int hashCode() {

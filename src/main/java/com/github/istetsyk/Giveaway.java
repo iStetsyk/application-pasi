@@ -5,10 +5,11 @@ public class Giveaway {
     private Manager manager;
 
     public void callCustomer(Beeper beeper) {
-
+        customerCollectedOrder(beeper);
     }
 
     public void customerCollectedOrder(Beeper beeper) {
+        manager.customerCollectedOrder(beeper);
 
     }
 

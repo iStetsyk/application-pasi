@@ -19,17 +19,22 @@ public class Manager {
 
     public void prepareMeal(Beeper beeper) {
         kitchen.prepareMeal(beeper);
+//        mealReady(beeper);
     }
 
     public  void mealReady(Beeper beeper) {
-
+//        giveaway.callCustomer(beeper);
+        callCustomer(beeper);
     }
 
     public void callCustomer(Beeper beeper) {
-
+        giveaway.callCustomer(beeper);
+//        customerCollectedOrder(beeper);
     }
 
     public void customerCollectedOrder(Beeper beeper) {
+        System.out.println("Zapraszamy ponownie! :)");
 
+        cashDesk.newOrder("");
     }
 }
